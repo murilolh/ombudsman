@@ -1,6 +1,8 @@
 # ombudsman
 Project for an Ombudsman System
 
+Use schema.sql to configure the database
+Use load.sql to load initial data
 Edit confg.php for configuration
 Edit string.php for localization
 
