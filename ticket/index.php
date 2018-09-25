@@ -192,7 +192,7 @@
     		<th><?php echo $msg['protocol']; ?></th>
         <th><?php echo $msg['type']; ?></th>
         <th><?php echo $msg['channel']; ?></th>
-        <th><?php echo $msg['type']; ?></th>
+        <th><?php echo $msg['theme']; ?></th>
         <th><?php echo $msg['created']; ?></th>
         <th><?php echo $msg['finalized']; ?></th>
         <th><?php echo $msg['limit_date']; ?></th>
