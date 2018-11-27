@@ -28,7 +28,7 @@ define('EMAIL_OMBUDSMAN', 'ombudsman@ombudsman.com');
 define('HEADER_TEMPLATE', ABSPATH . '../inc/header.php');
 define('FOOTER_TEMPLATE', ABSPATH . '../inc/footer.php');
 
-define('LANGUAGE', 'EN'); // EN or PT_BR
+define('LANGUAGE', getenv('OMBUD_LANGUAGE')); // EN or PT_BR
 define('TIMEZONE', 'America/Fortaleza');
 define('DATEFORMAT', 'd/m/Y H:i:s');
 
