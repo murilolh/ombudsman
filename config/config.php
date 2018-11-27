@@ -9,7 +9,7 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 if ( !defined('BASEURL') )
-	define('BASEURL', '/');
+	define('BASEURL', getenv('OMBUD_BASE_URL'));
 
 if ( !defined('SYSTEMNAME') )
 	define('SYSTEMNAME', 'Ombudsman');
@@ -29,8 +29,8 @@ define('HEADER_TEMPLATE', ABSPATH . '../inc/header.php');
 define('FOOTER_TEMPLATE', ABSPATH . '../inc/footer.php');
 
 define('LANGUAGE', getenv('OMBUD_LANGUAGE')); // EN or PT_BR
-define('TIMEZONE', 'America/Fortaleza');
-define('DATEFORMAT', 'd/m/Y H:i:s');
+define('TIMEZONE', getenv('OMBUD_TIMEZONE');
+define('DATEFORMAT', getenv('OMBUD_DATEFORMAT');
 
 define('PAGINATOR_LIMIT', 8);
 define('PAGINATOR_LINKS', 5);
