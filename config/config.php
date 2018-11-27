@@ -1,9 +1,9 @@
 <?php
 
-define('DB_NAME', 'ombudsman');
-define('DB_USER', 'root');
-define('DB_PASSWORD', '');
-define('DB_HOST', 'localhost');
+define('DB_NAME', getenv('OMBUD_DB_NAME'));
+define('DB_USER', getenv('OMBUD_DB_USER'));
+define('DB_PASSWORD', getenv('OMBUD_DB_PASSWORD'));
+define('DB_HOST', getenv('OMBUD_DB_HOST'));
 
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
