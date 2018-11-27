@@ -9,7 +9,7 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 if ( !defined('BASEURL') )
-	define('BASEURL', getenv('OMBUD_BASE_URL'));
+	define('BASEURL', '/');
 
 if ( !defined('SYSTEMNAME') )
 	define('SYSTEMNAME', 'Ombudsman');
