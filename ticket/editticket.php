@@ -15,7 +15,7 @@
 
   <div id="actions" class="row">
     <div class="col-md-12">
-      <p><i><?php echo $msg['last_notify']; ?> <?php echo date_format(date_create($ticket['modified']), DATEFORMAT); ?></i></p>
+      <p><i><?php echo $msg['last_notify']; ?> <?php echo date_format(date_create($ticket['modified']), DATETIMEFORMAT); ?></i></p>
       <button type="submit" class="btn btn-primary"><?php echo $msg['save']; ?></button>
       <a href="index.php" class="btn btn-default"><?php echo $msg['cancel']; ?></a>
       <button id="btnNotify" type="button" href="#" class="btn btn-default" data-toggle="modal" data-target="#notify-modal" data-ticket="<?php echo $ticket['id']; ?>"

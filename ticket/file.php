@@ -48,10 +48,10 @@
          ($ticket['theme_object']) . ';' .
          ($ticket['id_complaint_theme'] > 0 ? $themes[$ticket['id_complaint_theme']-1]['name'] : "") . ';' .
          ($ticket['id_contract_type'] > 0 ? $contract_types[$ticket['id_contract_type']-1]['name'] : "") . ';' .
-         (!empty($ticket['ticket_date_ini']) ? date_format(date_create($ticket['ticket_date_ini']),"d/m/Y") : "") . ';' .
-         (!empty($ticket['ticket_date_fin']) ? date_format(date_create($ticket['ticket_date_fin']),"d/m/Y") : "") . ';' .
+         (!empty($ticket['ticket_date_ini']) ? date_format(date_create($ticket['ticket_date_ini']), DATEFORMAT) : "") . ';' .
+         (!empty($ticket['ticket_date_fin']) ? date_format(date_create($ticket['ticket_date_fin']), DATEFORMAT) : "") . ';' .
          ($ticket['deadline_days']) . ';' .
-         (!empty($ticket['deadline_date']) ? date_format(date_create($ticket['deadline_date']),"d/m/Y") : "") . ';' .
+         (!empty($ticket['deadline_date']) ? date_format(date_create($ticket['deadline_date']), DATEFORMAT) : "") . ';' .
          ($ticket['id_deadline_type'] > 0 ? $deadline_types[$ticket['id_deadline_type']-1]['name'] : "") . ';' .
          ($ticket['id_deadline_conclusion'] > 0 ? $deadline_conclusions[$ticket['id_deadline_conclusion']-1]['name'] : "") . ';' .
          ($ticket['id_person_type'] > 0 ? $person_types[$ticket['id_person_type']-1]['name'] : "") . ';' .

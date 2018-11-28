@@ -31,6 +31,7 @@ define('FOOTER_TEMPLATE', ABSPATH . '../inc/footer.php');
 define('LANGUAGE', getenv('OMBUD_LANGUAGE')); // EN or PT_BR
 define('TIMEZONE', getenv('OMBUD_TIMEZONE'));
 define('DATEFORMAT', getenv('OMBUD_DATEFORMAT'));
+define('DATETIMEFORMAT', getenv('OMBUD_DATETIMEFORMAT'));
 
 define('PAGINATOR_LIMIT', getenv('OMBUD_PAGINATOR_LIMIT'));
 define('PAGINATOR_LINKS', getenv('OMBUD_PAGINATOR_LINKS'));

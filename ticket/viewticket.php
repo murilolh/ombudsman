@@ -38,16 +38,16 @@
 	<dd style="margin-left: 250px;"><?php echo $ticket['id_contract_type'] > 0 ? $contract_types[$ticket['id_contract_type']-1]['name'] : ""; ?></dd>
 
 	<dt style="width:20%;"><?php echo $msg['created']; ?>:</dt>
-	<dd style="margin-left: 250px;"><?php echo !empty($ticket['ticket_date_ini']) ? date_format(date_create($ticket['ticket_date_ini']),"d/m/Y") : null; ?></dd>
+	<dd style="margin-left: 250px;"><?php echo !empty($ticket['ticket_date_ini']) ? date_format(date_create($ticket['ticket_date_ini']),DATEFORMAT) : null; ?></dd>
 
 	<dt style="width:20%;"><?php echo $msg['finalized']; ?>:</dt>
-	<dd style="margin-left: 250px;"><?php echo !empty($ticket['ticket_date_fin']) ? date_format(date_create($ticket['ticket_date_fin']),"d/m/Y") : null; ?></dd>
+	<dd style="margin-left: 250px;"><?php echo !empty($ticket['ticket_date_fin']) ? date_format(date_create($ticket['ticket_date_fin']),DATEFORMAT) : null; ?></dd>
 
 	<dt style="width:20%;"><?php echo $msg['deadline_days']; ?>:</dt>
 	<dd style="margin-left: 250px;"><?php echo $ticket['deadline_days']; ?></dd>
 
 	<dt style="width:20%;"><?php echo $msg['limit_date']; ?>:</dt>
-	<dd style="margin-left: 250px;"><?php echo !empty($ticket['deadline_date']) ? date_format(date_create($ticket['deadline_date']),"d/m/Y") : null; ?></dd>
+	<dd style="margin-left: 250px;"><?php echo !empty($ticket['deadline_date']) ? date_format(date_create($ticket['deadline_date']),DATEFORMAT) : null; ?></dd>
 
 	<dt style="width:20%;"><?php echo $msg['deadline_type']; ?>:</dt>
 	<dd style="margin-left: 250px;"><?php echo $ticket['id_deadline_type'] > 0 ? $deadline_types[$ticket['id_deadline_type']-1]['name'] : ""; ?></dd>

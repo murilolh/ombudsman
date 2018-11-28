@@ -214,7 +214,7 @@
                      $tomorrow = date_create('now', new DateTimeZone(TIMEZONE));
                      $tomorrow->modify('+1 Weekday');
 
-                     if(date_format($deadline,"d/m/Y") == date_format($tomorrow,"d/m/Y")){
+                     if(date_format($deadline,DATEFORMAT) == date_format($tomorrow,DATEFORMAT)){
                        echo '<a href="#" class="btn btn-sm btn-warning"><i class="fa"></i> &nbsp;&nbsp; </a>';
                      } else if($deadline > $today){
                        echo '<a href="#" class="btn btn-sm btn-success"><i class="fa"></i> &nbsp;&nbsp; </a>';
@@ -229,9 +229,9 @@
               <td><?php echo $ticket['id_ticket_type'] > 0 ? $ticket_types[$ticket['id_ticket_type']-1]['name'] : ""; ?></td>
               <td><?php echo $ticket['id_channel'] > 0 ? $channels[$ticket['id_channel']-1]['name'] : ""; ?></td>
               <td><?php echo $ticket['id_ticket_theme'] > 0 ? $themes[$ticket['id_ticket_theme']-1]['name'] : ""; ?></td>
-              <td><?php echo date_format(date_create($ticket['ticket_date_ini']),"d/m/Y"); ?></td>
-              <td><?php echo !empty($ticket['ticket_date_fin']) ? date_format(date_create($ticket['ticket_date_fin']),"d/m/Y") : null; ?></td>
-              <td><?php echo !empty($ticket['deadline_date']) ? date_format(date_create($ticket['deadline_date']),"d/m/Y") : null; ?></td>
+              <td><?php echo date_format(date_create($ticket['ticket_date_ini']),DATEFORMAT); ?></td>
+              <td><?php echo !empty($ticket['ticket_date_fin']) ? date_format(date_create($ticket['ticket_date_fin']),DATEFORMAT) : null; ?></td>
+              <td><?php echo !empty($ticket['deadline_date']) ? date_format(date_create($ticket['deadline_date']),DATEFORMAT) : null; ?></td>
           		<td class="actions text-right">
           			<a href="viewticket.php?id=<?php echo $ticket['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i></a>
           			<a href="editticket.php?id=<?php echo $ticket['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i></a>

@@ -208,7 +208,7 @@
 		<div class="form-group col-md-4">
 	    <label for="formNotified"><?php echo $msg['last_notify']; ?></label>
 	    <input id="formNotified" type="text" class="form-control" readonly name="ticket['notified']"
-				value="<?php echo (!empty($ticket['notified']) && date_format(date_create($ticket['notified']), DATEFORMAT) != '30/11/-0001 00:00:00') ? date_format(date_create($ticket['notified']),"d/m/Y H:i:s") : null; ?>">
+				value="<?php echo (!empty($ticket['notified']) && date_format(date_create($ticket['notified']), DATETIMEFORMAT) != '30/11/-0001 00:00:00') ? date_format(date_create($ticket['notified']), DATETIMEFORMAT) : null; ?>">
 	  </div>
 	<?php endif; ?>
 </div>
