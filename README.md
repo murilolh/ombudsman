@@ -9,7 +9,7 @@ Use [load.sql](https://github.com/murilolh/ombudsman/blob/master/db/load.sql) to
 
 Edit [config.php](https://github.com/murilolh/ombudsman/blob/master/config/config.php) for configuration
 
-Edit [strings.php](https://github.com/murilolh/ombudsman/blob/master/const/strings.php) for localization
+Edit [strings.php](https://github.com/murilolh/ombudsman/blob/master/const/strings.php) for localisation
 
 * PHP v7.1
 * Bootstrap v3.3.7
