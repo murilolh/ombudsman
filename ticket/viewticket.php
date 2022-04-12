@@ -8,7 +8,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Manifestação <?php echo $ticket['protocol']; ?></h2>
+<h2><?php echo $msg['ticket']; ?> <?php echo $ticket['protocol']; ?></h2>
 <hr>
 
 <?php if (!empty($_SESSION['message'])) : ?>
